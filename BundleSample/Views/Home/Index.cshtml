@@ -1,8 +1,10 @@
-﻿<html>
+﻿@using System.Configuration
+
+<html>
 <body>
     <h1>Hello George again, from Home View</h1>
     <p>Current datetime = @DateTime.Now</p>
-
+    <h2>You are running in environment: @ConfigurationManager.AppSettings["Environment"]</h2>
     @{
         System.Diagnostics.Debug.WriteLine("Hello debug");      // Works on VS output window
     }
