@@ -5,6 +5,7 @@
     <h1>Hello George! Checkin through auto deployment!!!</h1>
     <p>Current datetime = @DateTime.Now</p>
     <h2>You are running in environment: @ConfigurationManager.AppSettings["Environment"]</h2>
+    <h2>Release: @ConfigurationManager.AppSettings["Octopus.Release.CurrentForEnvironment.Number"]</h2>
     @{
         System.Diagnostics.Debug.WriteLine("Hello debug");      // Works on VS output window
     }
