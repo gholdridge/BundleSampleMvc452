@@ -6,6 +6,13 @@ namespace BundleSample.Controllers
     {
         public ActionResult Index()
         {
+            // Testing OzCode
+            for (int i = 0; i < 10; i++)
+            {
+                System.Console.WriteLine($"Hello {i}");
+            }
+
+
             return View(); 
         }
     }
